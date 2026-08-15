@@ -1,0 +1,124 @@
+---
+---
+
+@import "minima";
+
+/* ---- Overall readability ---- */
+.page-content {
+  line-height: 1.65;
+  font-size: 17px;
+}
+ 
+.page-content h1 {
+  margin-top: 0;
+}
+ 
+.page-content h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #e1e1e1;
+}
+ 
+.page-content h3 {
+  margin-top: 1.6em;
+  color: #2a5db0;
+}
+ 
+/* ---- Section dividers between narratives/sections ---- */
+.page-content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2.5em 0;
+}
+ 
+/* ---- "Relevant files" callout box ---- */
+.file-list {
+  background: #f4f6f9;
+  border-left: 4px solid #2a5db0;
+  padding: 0.75em 1em;
+  margin: 1em 0 1.5em 0;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+ 
+/* ---- Screenshot figures with captions ---- */
+.narrative-figure {
+  margin: 1.5em auto;
+  text-align: center;
+}
+ 
+.narrative-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+ 
+.narrative-figure figcaption {
+  font-size: 0.88em;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5em;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+ 
+/* ---- Table of contents list ---- */
+.page-content ul li {
+  margin-bottom: 0.4em;
+}
+ 
+/* ---- Nav bar spacing fix (tabs feeling cramped) ---- */
+.site-nav .nav-item {
+  margin-left: 24px;
+}
+ 
+.site-nav .nav-item:first-child {
+  margin-left: 0;
+}
+ 
+/* ---- Slightly wider content area on large screens ---- */
+@media screen and (min-width: 900px) {
+  .wrapper {
+    max-width: 900px;
+  }
+}
+ 
+/* ---- Responsive video embed (Code Review page) ---- */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+ 
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+ 
+/* ---- Home page name/subtitle under main heading ---- */
+.page-content h2 {
+  border-bottom: none; /* don't underline the name subtitle like other h2s */
+}
+ 
+.page-content h1 + h2 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #666;
+  font-weight: 400;
+}
+ 
